@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.actuallyasmartname.x2Craft_Fabric.init.x2Craft-FabricMain"
     ]
   },
   "mixins": [
