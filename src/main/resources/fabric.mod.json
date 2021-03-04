@@ -1,27 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "x2craft",
+  "version": "0.0.1a",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "x2Craft",
+  "description": "A mod that adds many things to the game!",
   "authors": [
-    "Me!"
+    "actuallyasmartname"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "code": "https://github.com/actuallyasmartname/x2Craft-Fabric"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.actuallyasmartname.x2Craft_Fabric.x2Craft_Fabric"
     ]
   },
+  "mixins": [
+
+  ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
