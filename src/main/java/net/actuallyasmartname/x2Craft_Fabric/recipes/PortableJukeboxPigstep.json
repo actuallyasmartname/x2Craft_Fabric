@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:jukebox"
+        },
+        {
+            "item": "minecraft:music_disc_pigstep"
+        }
+    ],
+    "result": {
+        "item": "x2craft:portablejukeboxpigstep",
+        "count": 1
+    }
+}
