@@ -1,15 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "###",
-        "###",
-        "###"
-    ],
-    "key": {
-        "#": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:obsidian"
+        },
+        {
+            "item": "minecraft:obsidian"
+        },
+        {
+            "item": "minecraft:obsidian"
+        },
+        {
             "item": "minecraft:obsidian"
         }
-    },
+    ],
     "result": {
         "item": "x2craft:hardened_obsidian",
         "count": 1
