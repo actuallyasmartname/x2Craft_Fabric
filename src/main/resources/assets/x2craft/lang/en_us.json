@@ -1,4 +1,12 @@
 {
     "item.x2craft.portablejukeboxpigstep": "Yee",
-    "block.x2craft.hardened_obsidian": "Hardened Obsidian"
+    "block.x2craft.hardened_obsidian": "Hardened Obsidian",
+    "item.x2craft.hardened_obsidian_pickaxe": "Hardened Obsidian Pickaxe",
+    "item.x2craft.hardened_obsidian_axe": "Hardened Obsidian Axe",
+    "item.x2craft.hardened_obsidian_hoe": "Hardened Obsidian Hoe",
+    "item.x2craft.hardened_obsidian_shovel": "Hardened Obsidian Shovel",
+    "item.x2craft.hardened_obsidian_helmet": "Hardened Obsidian Helmet",
+    "item.x2craft.hardened_obsidian_chestplate": "Hardened Obsidian Chestplate",
+    "item.x2craft.hardened_obsidian_leggings": "Hardened Obsidian Leggings",
+    "item.x2craft.hardened_obsidian_boots": "Hardened Obsidian Boots"
 }
