@@ -1,1 +1,1 @@
-# x2Craft - Fabric       [![](http://cf.way2muchnoise.eu/full_455229_downloads.svg)](https://curseforge.com/minecraft/mc-mods/x2craft)
+# x2Craft - Fabric       [![](http://cf.way2muchnoise.eu/full_455229_downloads.svg)](https://curseforge.com/minecraft/mc-mods/x2craft) [![](http://cf.way2muchnoise.eu/versions/For%20MC_455229_1.16.svg)](https://curseforge.com/minecraft/mc-mods/x2craft/files)
