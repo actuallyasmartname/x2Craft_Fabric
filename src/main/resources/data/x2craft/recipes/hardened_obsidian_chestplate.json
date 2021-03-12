@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "x2craft:hardened_obsidian"
+        }
+    },
+    "result": {
+        "item": "x2craft:hardened_obsidian_chestplate",
+        "count": 1
+    }
+}
