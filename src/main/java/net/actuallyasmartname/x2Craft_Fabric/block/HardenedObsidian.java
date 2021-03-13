@@ -8,7 +8,7 @@ import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 public class HardenedObsidian extends Block{
 
     public HardenedObsidian() {
-        super(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).sounds(BlockSoundGroup.STONE).strength(100.0f, 1200.0f));
+        super(FabricBlockSettings.of(Material.STONE).breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).sounds(BlockSoundGroup.STONE).strength(100.0f, 1200.0f));
     }
     
 }
