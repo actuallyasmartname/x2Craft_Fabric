@@ -13,7 +13,6 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class x2craftfabric implements ModInitializer {
-    public static final Item FABRIC_ITEM = new Item(new Item.Settings().group(ItemGroup.MISC)); 
     public static final Block HARDENED_OBSIDIAN = new HardenedObsidian();
     public static final String MODID = "x2craft";
  @Override

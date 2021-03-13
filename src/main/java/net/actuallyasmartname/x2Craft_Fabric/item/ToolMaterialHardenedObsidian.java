@@ -11,13 +11,6 @@ public class ToolMaterialHardenedObsidian implements ToolMaterial {
         
         return 2456;
     }
-
-    @Override
-    public float getMiningSpeedMultiplier() {
-        
-        return 14.0f;
-    }
-
     @Override
     public float getAttackDamage() {
         
@@ -39,6 +32,11 @@ public class ToolMaterialHardenedObsidian implements ToolMaterial {
     @Override
     public Ingredient getRepairIngredient() {
         return Ingredient.ofItems(x2craftfabric.HARDENED_OBSIDIAN);
+    }
+
+    @Override
+    public float getMiningSpeed() {
+        return 14.0f;
     }
     
 }

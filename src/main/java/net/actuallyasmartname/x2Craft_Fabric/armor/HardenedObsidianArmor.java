@@ -24,7 +24,7 @@ public class HardenedObsidianArmor implements ArmorMaterial{
     }
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
+        return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
     }
     @Override
     public Ingredient getRepairIngredient() {
@@ -37,9 +37,5 @@ public class HardenedObsidianArmor implements ArmorMaterial{
     @Override
     public float getToughness() {
         return 5;
-    }
-    @Override
-    public float getKnockbackResistance() {
-        return 2;
     }};
     
