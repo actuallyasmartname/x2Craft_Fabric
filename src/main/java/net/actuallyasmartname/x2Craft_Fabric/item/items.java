@@ -44,7 +44,7 @@ public class items {
         Registry.register(Registry.ITEM, new Identifier(MODID, "green_terracotta_slab"), new BlockItem(blocks.GREEN_TERRACOTTA_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier(MODID, "red_terracotta_slab"), new BlockItem(blocks.RED_TERRACOTTA_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier(MODID, "black_terracotta_slab"), new BlockItem(blocks.BLACK_TERRACOTTA_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_slab"), new BlockItem(blocks.HARDENED_OBSIDIAN, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_slab"), new BlockItem(blocks.HARDENED_OBSIDIAN_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //misc
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian"), new BlockItem(blocks.HARDENED_OBSIDIAN, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
     }
