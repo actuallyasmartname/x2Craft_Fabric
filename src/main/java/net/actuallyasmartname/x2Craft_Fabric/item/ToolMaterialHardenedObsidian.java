@@ -1,6 +1,6 @@
 package net.actuallyasmartname.x2Craft_Fabric.item;
 
-import net.actuallyasmartname.x2craftfabric;
+import net.actuallyasmartname.x2Craft_Fabric.block.blocks;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -38,7 +38,7 @@ public class ToolMaterialHardenedObsidian implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(x2craftfabric.HARDENED_OBSIDIAN);
+        return Ingredient.ofItems(blocks.HARDENED_OBSIDIAN);
     }
     
 }

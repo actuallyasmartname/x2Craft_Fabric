@@ -1,6 +1,6 @@
 package net.actuallyasmartname.x2Craft_Fabric.armor;
 
-import net.actuallyasmartname.x2craftfabric;
+import net.actuallyasmartname.x2Craft_Fabric.block.blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -28,7 +28,7 @@ public class HardenedObsidianArmor implements ArmorMaterial{
     }
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(x2craftfabric.HARDENED_OBSIDIAN);
+        return Ingredient.ofItems(blocks.HARDENED_OBSIDIAN);
     }
     @Override
     public String getName() {
