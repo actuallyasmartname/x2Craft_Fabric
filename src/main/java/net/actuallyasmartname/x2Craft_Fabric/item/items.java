@@ -5,6 +5,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.actuallyasmartname.x2Craft_Fabric.block.blocks;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
@@ -13,6 +14,7 @@ import net.minecraft.util.registry.Registry;
 public class items {
     public static final String MODID = "x2craft";
     public static final ArmorMaterial HARDENED_ARMOR_MATERIAL = new HardenedObsidianArmor();
+    public static final Item WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(6).saturationModifier(9.6f).meat().snack().build()));
     public static void RegisterItems() {
         //tools
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_hoe"), new HoeBase(new ToolMaterialHardenedObsidian()));
@@ -24,6 +26,8 @@ public class items {
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_chestplate"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_leggings"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_boots"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.FEET));
+        //food
+        Registry.register(Registry.ITEM, new Identifier(MODID, "wolf_meat"), WOLF_MEAT);
         //slabs
         Registry.register(Registry.ITEM, new Identifier(MODID, "obsidian_slab"), new BlockItem(blocks.OBSIDIAN_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //terracotta slabs
@@ -44,7 +48,6 @@ public class items {
         Registry.register(Registry.ITEM, new Identifier(MODID, "green_terracotta_slab"), new BlockItem(blocks.GREEN_TERRACOTTA_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier(MODID, "red_terracotta_slab"), new BlockItem(blocks.RED_TERRACOTTA_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier(MODID, "black_terracotta_slab"), new BlockItem(blocks.BLACK_TERRACOTTA_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
-        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_slab"), new BlockItem(blocks.HARDENED_OBSIDIAN_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //misc
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian"), new BlockItem(blocks.HARDENED_OBSIDIAN, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
     }

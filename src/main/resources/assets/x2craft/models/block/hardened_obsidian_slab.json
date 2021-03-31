@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/slab",
-    "textures": {
-      "bottom": "x2craft:block/hardened_obsidian",
-      "top": "x2craft:block/hardened_obsidian",
-      "side": "x2craft:block/hardened_obsidian"
-    }
-  }

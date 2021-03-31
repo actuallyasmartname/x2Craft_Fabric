@@ -28,7 +28,6 @@ public class blocks {
     public static final SlabBlock GREEN_TERRACOTTA_SLAB = new SlabBlock(TERRACOTTASETTINGS);
     public static final SlabBlock RED_TERRACOTTA_SLAB = new SlabBlock(TERRACOTTASETTINGS);
     public static final SlabBlock BLACK_TERRACOTTA_SLAB = new SlabBlock(TERRACOTTASETTINGS);
-    public static final SlabBlock HARDENED_OBSIDIAN_SLAB = new SlabBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).sounds(BlockSoundGroup.STONE).strength(100.0f, 1200.0f));
     public static final SlabBlock OBSIDIAN_SLAB = new SlabBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).hardness(50.0f).resistance(1200f).sounds(BlockSoundGroup.STONE));
     //misc
     public static final Block HARDENED_OBSIDIAN = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).sounds(BlockSoundGroup.STONE).strength(100.0f, 1200.0f));
@@ -52,9 +51,6 @@ public class blocks {
         Registry.register(Registry.BLOCK, new Identifier(MODID, "red_terracotta_slab"), RED_TERRACOTTA_SLAB);
         Registry.register(Registry.BLOCK, new Identifier(MODID, "black_terracotta_slab"), BLACK_TERRACOTTA_SLAB);
         Registry.register(Registry.BLOCK, new Identifier(MODID, "obsidian_slab"), OBSIDIAN_SLAB);
-        Registry.register(Registry.BLOCK, new Identifier(MODID, "hardened_obsidian_slab"), HARDENED_OBSIDIAN_SLAB);
-        //misc
         Registry.register(Registry.BLOCK, new Identifier(MODID, "hardened_obsidian"), HARDENED_OBSIDIAN);
     }
-    
 }
