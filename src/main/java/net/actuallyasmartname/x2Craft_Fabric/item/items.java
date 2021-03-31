@@ -2,6 +2,8 @@ package net.actuallyasmartname.x2Craft_Fabric.item;
 import net.actuallyasmartname.x2Craft_Fabric.armor.HardenedObsidianArmor;
 import net.actuallyasmartname.x2Craft_Fabric.armor.BaseArmor;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ArmorMaterial;
 import net.actuallyasmartname.x2Craft_Fabric.block.blocks;
 import net.minecraft.item.BlockItem;
@@ -14,7 +16,8 @@ import net.minecraft.util.registry.Registry;
 public class items {
     public static final String MODID = "x2craft";
     public static final ArmorMaterial HARDENED_ARMOR_MATERIAL = new HardenedObsidianArmor();
-    public static final Item WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(6).saturationModifier(9.6f).meat().snack().build()));
+    public static final Item RAW_WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).meat().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20*5), 0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 20*10), 1f).build()));
+    public static final Item COOKED_WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(6).saturationModifier(3.5f).meat().build()));
     public static void RegisterItems() {
         //tools
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_hoe"), new HoeBase(new ToolMaterialHardenedObsidian()));
@@ -27,7 +30,8 @@ public class items {
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_leggings"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_boots"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.FEET));
         //food
-        Registry.register(Registry.ITEM, new Identifier(MODID, "wolf_meat"), WOLF_MEAT);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "raw_wolf_meat"), RAW_WOLF_MEAT);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "cooked_wolf_meat"), COOKED_WOLF_MEAT);
         //slabs
         Registry.register(Registry.ITEM, new Identifier(MODID, "obsidian_slab"), new BlockItem(blocks.OBSIDIAN_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //terracotta slabs
