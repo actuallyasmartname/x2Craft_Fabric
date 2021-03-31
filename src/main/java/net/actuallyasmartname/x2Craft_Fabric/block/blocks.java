@@ -52,9 +52,9 @@ public class blocks {
         Registry.register(Registry.BLOCK, new Identifier(MODID, "red_terracotta_slab"), RED_TERRACOTTA_SLAB);
         Registry.register(Registry.BLOCK, new Identifier(MODID, "black_terracotta_slab"), BLACK_TERRACOTTA_SLAB);
         Registry.register(Registry.BLOCK, new Identifier(MODID, "obsidian_slab"), OBSIDIAN_SLAB);
-        Registry.register(Registry.BLOCK, new Identifier(MODID, "hardened_obsidian_slab"), HARDENED_OBSIDIAN);
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "hardened_obsidian_slab"), HARDENED_OBSIDIAN_SLAB);
         //misc
-        Registry.register(Registry.BLOCK, new Identifier(MODID, "hardened_obsidian"), HARDENED_OBSIDIAN_SLAB);
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "hardened_obsidian"), HARDENED_OBSIDIAN);
     }
     
 }
