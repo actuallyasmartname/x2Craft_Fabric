@@ -1,3 +1,5 @@
+/* @author actuallyasmartname
+   @copyright 2021, MIT license         */
 package net.actuallyasmartname;
 import net.actuallyasmartname.x2Craft_Fabric.block.blocks;
 import net.actuallyasmartname.x2Craft_Fabric.item.items;
