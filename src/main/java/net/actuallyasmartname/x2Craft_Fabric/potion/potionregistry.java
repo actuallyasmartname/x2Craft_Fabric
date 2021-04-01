@@ -23,6 +23,8 @@ public final class potionregistry {
 	public static final Potion LONG_HASTE = register("long_haste", new Potion(new StatusEffectInstance(StatusEffects.HASTE, 4 * 60 * 20)));
 	public static final Potion STRONG_HASTE = register("strong_haste", new Potion(new StatusEffectInstance(StatusEffects.HASTE, 60 * 20, 1)));
 
+        public static final Potion GLOWING = register("glowing", new Potion(new StatusEffectInstance(StatusEffects.GLOWING, 2 * 60 * 20)), Items.GLOWSTONE_DUST, Potions.AWKWARD);  
+	public static final Potion LONG_GLOWING = register("long_glowing", new Potion(new StatusEffectInstance(StatusEffects.GLOWING, 4 * 60 * 20)));
 	
 	public static final Potion UNLUCKINESS = register("unluckiness", new Potion(new StatusEffectInstance(StatusEffects.UNLUCK, 6000)), Items.FERMENTED_SPIDER_EYE, Potions.LUCK);
 	public static final Potion LONG_UNLUCKINESS = register("long_unluckiness", new Potion(new StatusEffectInstance(StatusEffects.UNLUCK, 4 * 60 * 20)));
