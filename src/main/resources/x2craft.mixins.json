@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "net.actuallyasmartname.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+      "BrewingRecipeRegistryAccessor"
+    ],
+    "injectors": {
+      "defaultRequire": 1
+    }
+  }

@@ -22,7 +22,7 @@
     ]
   },
   "mixins": [
-
+     "x2craft.mixins.json"
   ],
 
   "depends": {
