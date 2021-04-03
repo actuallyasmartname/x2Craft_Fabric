@@ -4,6 +4,7 @@ import net.actuallyasmartname.x2Craft_Fabric.armor.BaseArmor;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.actuallyasmartname.x2Craft_Fabric.block.blocks;
 import net.minecraft.item.BlockItem;
@@ -12,18 +13,31 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.actuallyasmartname.x2Craft_Fabric.item.toolbase.*;
+import net.actuallyasmartname.x2Craft_Fabric.item.toolmaterials.*;
 
 public class items {
     public static final String MODID = "x2craft";
     public static final ArmorMaterial HARDENED_ARMOR_MATERIAL = new HardenedObsidianArmor();
     public static final Item RAW_WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).meat().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20*5), 0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 20*10), 1f).build()));
     public static final Item COOKED_WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(6).saturationModifier(3.5f).meat().build()));
+
+    public static final Item HARDENED_OBSIDIAN_HELMET = new ArmorItem(HARDENED_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item HARDENED_OBSIDIAN_CHESTPLATE = new ArmorItem(HARDENED_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item HARDENED_OBSIDIAN_LEGGINGS = new ArmorItem(HARDENED_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item HARDENED_OBSIDIAN_BOOTS = new ArmorItem(HARDENED_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
     public static void RegisterItems() {
         //tools
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_hoe"), new HoeBase(new ToolMaterialHardenedObsidian()));
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_shovel"), new ShovelBase(new ToolMaterialHardenedObsidian()));
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_pickaxe"), new PickaxeBase(new ToolMaterialHardenedObsidian()));
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_axe"), new AxeBase(new ToolMaterialHardenedObsidian()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_sword"), new HardenedObsidianSwordBase(new ToolMaterialHardenedObsidian()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "lapis_pickaxe"), new PickaxeBase(new ToolMaterialLapis()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "lapis_axe"), new AxeBase(new ToolMaterialLapis()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "lapis_shovel"), new ShovelBase(new ToolMaterialLapis()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "lapis_hoe"), new HoeBase(new ToolMaterialLapis()));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "lapis_sword"), new LapisSwordBase(new ToolMaterialLapis()));
         //armor
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_helmet"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.HEAD));
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_chestplate"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.CHEST));

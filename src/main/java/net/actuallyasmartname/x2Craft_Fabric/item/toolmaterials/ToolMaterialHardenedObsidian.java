@@ -1,4 +1,4 @@
-package net.actuallyasmartname.x2Craft_Fabric.item;
+package net.actuallyasmartname.x2Craft_Fabric.item.toolmaterials;
 
 import net.actuallyasmartname.x2Craft_Fabric.block.blocks;
 import net.minecraft.item.ToolMaterial;
