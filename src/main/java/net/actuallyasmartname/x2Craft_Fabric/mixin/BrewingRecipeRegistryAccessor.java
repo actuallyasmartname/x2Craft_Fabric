@@ -1,5 +1,5 @@
   
-package net.actuallyasmartname.mixin;
+package net.actuallyasmartname.x2Craft_Fabric.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Optional;
 
-import net.actuallyasmartname.mixin.*;
+import net.actuallyasmartname.x2Craft_Fabric.mixin.*;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
