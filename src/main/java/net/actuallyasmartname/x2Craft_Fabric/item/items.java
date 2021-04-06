@@ -19,6 +19,7 @@ import net.actuallyasmartname.x2Craft_Fabric.item.toolmaterials.*;
 public class items {
     public static final String MODID = "x2craft";
     public static final ArmorMaterial HARDENED_ARMOR_MATERIAL = new HardenedObsidianArmor();
+    public static final Item GREEN_NETHER_WART = new Item(new Item.Settings().group(ItemGroup.MISC));
     public static final Item RAW_WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).meat().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20*5), 0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 20*10), 1f).build()));
     public static final Item COOKED_WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(6).saturationModifier(3.5f).meat().build()));
 
@@ -27,6 +28,8 @@ public class items {
     public static final Item HARDENED_OBSIDIAN_LEGGINGS = new ArmorItem(HARDENED_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item HARDENED_OBSIDIAN_BOOTS = new ArmorItem(HARDENED_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
     public static void RegisterItems() {
+        //stairs
+        Registry.register(Registry.ITEM, new Identifier(MODID, "diamond_stairs"), new BlockItem(blocks.DIAMOND_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //tools
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_hoe"), new HoeBase(new ToolMaterialHardenedObsidian()));
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_shovel"), new ShovelBase(new ToolMaterialHardenedObsidian()));
@@ -68,6 +71,7 @@ public class items {
         Registry.register(Registry.ITEM, new Identifier(MODID, "black_terracotta_slab"), new BlockItem(blocks.BLACK_TERRACOTTA_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //misc
         Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian"), new BlockItem(blocks.HARDENED_OBSIDIAN, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "green_nether_wart"), GREEN_NETHER_WART);
     }
 
 }

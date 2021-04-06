@@ -1,15 +1,18 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#"
+        "#R"
     ],
     "key": {
         "#": {
-            "item": "minecraft:nether_wart_block"
+            "item": "x2craft:green_nether_wart"
+        },
+        "R": {
+            "item": "minecraft:red_dye"
         }
     },
     "result": {
         "item": "minecraft:nether_wart",
-        "count": 9
+        "count": 1
     }
 }

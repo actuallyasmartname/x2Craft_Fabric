@@ -3,13 +3,18 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.sound.BlockSoundGroup;
 public class blocks {
     public static final String MODID = "x2craft";
     public static final FabricBlockSettings TERRACOTTASETTINGS = FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES).resistance(4.2f).hardness(1.25f).sounds(BlockSoundGroup.STONE);
+    //stairs
+
     //slabs
     public static final SlabBlock TERRACOTTA_SLAB = new SlabBlock(TERRACOTTASETTINGS);
     public static final SlabBlock WHITE_TERRACOTTA_SLAB = new SlabBlock(TERRACOTTASETTINGS);
@@ -31,7 +36,10 @@ public class blocks {
     public static final SlabBlock OBSIDIAN_SLAB = new SlabBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).hardness(50.0f).resistance(1200f).sounds(BlockSoundGroup.STONE));
     //misc
     public static final Block HARDENED_OBSIDIAN = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).sounds(BlockSoundGroup.STONE).strength(100.0f, 1200.0f));
+    public static final StairsBlock DIAMOND_STAIRS = new stairsblockpublic(Blocks.DIAMOND_ORE.getDefaultState(), AbstractBlock.Settings.copy(Blocks.DIAMOND_ORE));
     public static void RegisterBlocks() {
+        //stairs
+        Registry.register(Registry.BLOCK, new Identifier(MODID, "diamond_stairs"), DIAMOND_STAIRS);
         //slabs
         Registry.register(Registry.BLOCK, new Identifier(MODID, "terracotta_slab"), TERRACOTTA_SLAB);
         Registry.register(Registry.BLOCK, new Identifier(MODID, "white_terracotta_slab"), WHITE_TERRACOTTA_SLAB);

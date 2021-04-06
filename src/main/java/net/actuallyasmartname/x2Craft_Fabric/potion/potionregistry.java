@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Optional;
 
+import net.actuallyasmartname.x2Craft_Fabric.item.items;
 import net.actuallyasmartname.x2Craft_Fabric.mixin.*;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -36,6 +37,8 @@ public final class potionregistry {
 	public static final Potion ABSORPTION = register("absorption", new Potion(new StatusEffectInstance(StatusEffects.ABSORPTION, 2 * 60 * 20, 1)), Items.GOLDEN_CARROT, Potions.AWKWARD);
 	public static final Potion LONG_ABSORPTION = register("long_absorption", new Potion(new StatusEffectInstance(StatusEffects.ABSORPTION, 4 * 60 * 20, 1)));
 	public static final Potion STRONG_ABSORPTION = register("strong_absorption", new Potion(new StatusEffectInstance(StatusEffects.ABSORPTION, 1 * 60 * 20, 3)));
+	
+	public static final Potion ILLNESS = register("illness", new Potion(new StatusEffectInstance(StatusEffects.NAUSEA, 2 * 60 * 20), new StatusEffectInstance(StatusEffects.POISON, 2 * 60 * 20), new StatusEffectInstance(StatusEffects.WEAKNESS, 2 * 60 * 20)), items.GREEN_NETHER_WART, Potions.AWKWARD);
 	
 	public static void initialize() {
 		RECIPES.forEach(RecipeInit::init);

@@ -5,11 +5,11 @@
     ],
     "key": {
         "#": {
-            "item": "minecraft:nether_wart_block"
+            "item": "minecraft:warped_wart_block"
         }
     },
     "result": {
-        "item": "minecraft:nether_wart",
+        "item": "x2craft:green_nether_wart",
         "count": 9
     }
 }

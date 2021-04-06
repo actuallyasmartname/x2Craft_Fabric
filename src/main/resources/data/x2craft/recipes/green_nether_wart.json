@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#G"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:nether_wart"
+        },
+        "G": {
+            "item": "minecraft:green_dye"
+        }
+    },
+    "result": {
+        "item": "x2craft:green_nether_wart",
+        "count": 1
+    }
+}
