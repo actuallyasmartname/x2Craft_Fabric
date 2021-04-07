@@ -40,6 +40,6 @@ public class HardenedObsidianArmor implements ArmorMaterial{
     }
     @Override
     public float getKnockbackResistance() {
-        return 2;
+        return 0.2f;
     }};
     

@@ -1,0 +1,50 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Cover Me In Obsidian",
+            "bold": false,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "Get a full set of Hardened Obsidian armor"
+        },
+        "icon": {
+            "item": "x2craft:hardened_obsidian_helmet"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "Get hardened obsidian armor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "x2craft:hardened_obsidian_helmet"
+                    },
+                    {
+                        "item": "x2craft:hardened_obsidian_chestplate"
+                    },
+                    {
+                        "item": "x2craft:hardened_obsidian_leggings"
+                    },
+                    {
+                        "item": "x2craft:hardened_obsidian_boots"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "Get hardened obsidian armor"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    }
+}

@@ -35,7 +35,7 @@ public class blocks {
     public static final SlabBlock BLACK_TERRACOTTA_SLAB = new SlabBlock(TERRACOTTASETTINGS);
     public static final SlabBlock OBSIDIAN_SLAB = new SlabBlock(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).hardness(50.0f).resistance(1200f).sounds(BlockSoundGroup.STONE));
     //misc
-    public static final Block HARDENED_OBSIDIAN = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 3).sounds(BlockSoundGroup.STONE).strength(100.0f, 1200.0f));
+    public static final Block HARDENED_OBSIDIAN = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().breakByHand(false).breakByTool(FabricToolTags.PICKAXES, 4).sounds(BlockSoundGroup.STONE).strength(100.0f, 1200.0f));
     public static final StairsBlock DIAMOND_STAIRS = new stairsblockpublic(Blocks.DIAMOND_ORE.getDefaultState(), AbstractBlock.Settings.copy(Blocks.DIAMOND_ORE));
     public static void RegisterBlocks() {
         //stairs
