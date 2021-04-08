@@ -22,6 +22,7 @@ public class items {
     public static final Item GREEN_NETHER_WART = new Item(new Item.Settings().group(ItemGroup.MISC));
     public static final Item RAW_WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.5f).meat().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20*5), 0.25f).statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 20*10), 1f).build()));
     public static final Item COOKED_WOLF_MEAT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(6).saturationModifier(3.5f).meat().build()));
+    public static final Item GOLDEN_BEETROOT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(3).saturationModifier(4f).build()));
 
     public static final Item HARDENED_OBSIDIAN_HELMET = new ArmorItem(HARDENED_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item HARDENED_OBSIDIAN_CHESTPLATE = new ArmorItem(HARDENED_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
@@ -49,6 +50,7 @@ public class items {
         //food
         Registry.register(Registry.ITEM, new Identifier(MODID, "raw_wolf_meat"), RAW_WOLF_MEAT);
         Registry.register(Registry.ITEM, new Identifier(MODID, "cooked_wolf_meat"), COOKED_WOLF_MEAT);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "golden_beetroot"), GOLDEN_BEETROOT);
         //slabs
         Registry.register(Registry.ITEM, new Identifier(MODID, "obsidian_slab"), new BlockItem(blocks.OBSIDIAN_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
         //terracotta slabs

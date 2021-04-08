@@ -31,3 +31,4 @@ bin/
 # fabric
 
 run/
+src/main/resources/assets/x2craft/textures/item/debug.log
