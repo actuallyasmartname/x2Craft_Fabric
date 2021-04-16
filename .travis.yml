@@ -1,3 +1,4 @@
+# this travis file is for testing stuff without actions
 dist: trusty
 os: linux
 language: java
@@ -15,7 +16,7 @@ cache:
 
 before_install: chmod +x gradlew
 install:
-  - ./gradlew build
+  - ./gradlew build --stacktrace
 script:
   - ./gradlew test
 
