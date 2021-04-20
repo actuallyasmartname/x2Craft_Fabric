@@ -1,6 +1,5 @@
 package net.actuallyasmartname.x2Craft_Fabric.item;
 import net.actuallyasmartname.x2Craft_Fabric.armor.HardenedObsidianArmor;
-import net.actuallyasmartname.x2Craft_Fabric.armor.BaseArmor;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -43,10 +42,10 @@ public class items {
         Registry.register(Registry.ITEM, new Identifier(MODID, "lapis_hoe"), new HoeBase(new ToolMaterialLapis()));
         Registry.register(Registry.ITEM, new Identifier(MODID, "lapis_sword"), new LapisSwordBase(new ToolMaterialLapis()));
         //armor
-        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_helmet"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.HEAD));
-        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_chestplate"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.CHEST));
-        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_leggings"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.LEGS));
-        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_boots"), new BaseArmor(HARDENED_ARMOR_MATERIAL, EquipmentSlot.FEET));
+        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_helmet"), HARDENED_OBSIDIAN_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_chestplate"), HARDENED_OBSIDIAN_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_leggings"), HARDENED_OBSIDIAN_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(MODID, "hardened_obsidian_boots"), HARDENED_OBSIDIAN_BOOTS);
         //food
         Registry.register(Registry.ITEM, new Identifier(MODID, "raw_wolf_meat"), RAW_WOLF_MEAT);
         Registry.register(Registry.ITEM, new Identifier(MODID, "cooked_wolf_meat"), COOKED_WOLF_MEAT);

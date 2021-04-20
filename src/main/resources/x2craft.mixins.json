@@ -4,7 +4,8 @@
     "package": "net.actuallyasmartname.x2Craft_Fabric.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
-      "BrewingRecipeRegistryAccessor"
+      "BrewingRecipeRegistryAccessor",
+      "mixin"
     ],
     "injectors": {
       "defaultRequire": 1
