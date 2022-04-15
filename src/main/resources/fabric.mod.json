@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "x2craft",
+  "version": "0.2.2b",
+
+  "name": "x2Craft",
+  "description": "A mod that adds many things to the game!",
+  "authors": [
+    "actuallyasmartname"
+  ],
+  "contact": {
+    "code": "https://github.com/actuallyasmartname/x2Craft-Fabric"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.actuallyasmartname.x2craftfabric"
+    ]
+  },
+  "mixins": [
+     "x2craft.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

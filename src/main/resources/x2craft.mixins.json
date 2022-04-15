@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "net.actuallyasmartname.x2Craft_Fabric.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+      "BrewingRecipeRegistryAccessor",
+      "mixin"
+    ],
+    "injectors": {
+      "defaultRequire": 1
+    }
+  }

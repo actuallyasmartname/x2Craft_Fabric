@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "x2craft:item/raw_wolf_meat"
+    }
+  }

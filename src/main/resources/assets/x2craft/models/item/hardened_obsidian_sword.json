@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures":{
+     "layer0": "x2craft:item/hardened_obsidian_sword"
+    }
+}

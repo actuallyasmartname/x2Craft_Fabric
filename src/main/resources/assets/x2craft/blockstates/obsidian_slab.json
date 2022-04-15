@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "x2craft:block/obsidian_slab" },
+        "type=top": { "model": "x2craft:block/obsidian_slab_top" },
+        "type=double": { "model": "minecraft:block/obsidian"}
+    }
+  }
